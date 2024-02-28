@@ -21,7 +21,7 @@
       <div class="btn-group me-5 ms-5 w-100 row" role="group" aria-label="Second group">
         <div class="col">
           <a href="index.html" class="btn btn-dark w-100" aria-label="Default select example">
-            Operadores
+            Condicionales
           </a>
         </div>
         <div class="dropdown col">
@@ -29,15 +29,15 @@
             Condicionales
           </button>
           <ul class="dropdown-menu">
-            <li><a href="#asd"><button class="dropdown-item" type="button">Deteccion de positivos y negativos</button></a>
+            <li><a href="#C1"><button class="dropdown-item" type="button">Deteccion de positivos y negativos</button></a>
             </li>
-            <li><a href="#asd"><button class="dropdown-item" type="button">Mayor o menor (2 numeros)</button></a></li>
-            <li><a href="#asd"><button class="dropdown-item" type="button">Mayor o menor (3 numeros positivos)</button></a>
+            <li><a href="#C2"><button class="dropdown-item" type="button">Mayor o menor (2 numeros)</button></a></li>
+            <li><a href="#C3"><button class="dropdown-item" type="button">Mayor o menor (3 numeros positivos)</button></a>
             </li>
-            <li><a href="#asd"><button class="dropdown-item" type="button">Suma o resta (A B)</button></a></li>
-            <li><a href="#asd"><button class="dropdown-item" type="button">Divicion</button></a></li>
-            <li><a href="#asd"><button class="dropdown-item" type="button">Suma y multiplicacion enteros</button></a></li>
-            <li><a href="#asd"><button class="dropdown-item" type="button">Año bisiesto</button></a></li>
+            <li><a href="#C4"><button class="dropdown-item" type="button">Suma o resta (A B)</button></a></li>
+            <li><a href="#C5"><button class="dropdown-item" type="button">Divicion</button></a></li>
+            <li><a href="#C6"><button class="dropdown-item" type="button">Suma y multiplicacion enteros</button></a></li>
+            <li><a href="#C7"><button class="dropdown-item" type="button">Año bisiesto</button></a></li>
           </ul>
         </div>
         <div class="col">
@@ -55,21 +55,76 @@
   </header>
   <main class="container mb-5">
     <h2 class="mt-5">
-      Operadores
+      Condicionales
     </h2>
     <div class="position-relative w-75 p-4">
-      <h3 id="O1">
-        1. Area de un triangulo
+      <h3 id="C1">
+        1. Deteccion de positivos y negativos
+      </h3>
+      <form>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese un numero</label>
+          <input type="email" class="form-control border border-black" id="exampleInputNumber"
+            aria-describedby="emailHelp">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C2">
+        2. Mayor o menor (2 numeros)
       </h3>
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Ingrese altura</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 1</label>
+          <input type="email" class="form-control border border-black" id="exampleInputNumber"
             aria-describedby="emailHelp">
         </div>
         <div class="mb-5">
-          <label for="exampleInputPassword1" class="form-label">Ingrese base</label>
-          <input type="password" class="form-control border border-black" id="exampleInputPassword1">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 2</label>
+          <input type="password" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C3">
+        3. Mayor o menor (3 numeros positivos)
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 1</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 2</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 3</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C4">
+        4. Suma o resta (A B)
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero A</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero B</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
         </div>
         <div class="position-absolute bottom-0 end-0">
           <button type="submit" class="btn btn-primary">Calcular</button>
@@ -77,126 +132,55 @@
       </form>
     </div>
     <div class="position-relative w-75 p-4">
-      <h3 id="O2">
-        2. Una suma
+      <h3 id="C5">
+        5. Divicion
       </h3>
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Ingrese numero 1</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
+          <label for="exampleInputNumber" class="form-label">Ingrese dividendo</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber"
             aria-describedby="emailHelp">
         </div>
         <div class="mb-5">
-          <label for="exampleInputPassword1" class="form-label">Ingrese numero 2</label>
-          <input type="password" class="form-control border border-black" id="exampleInputPassword1">
+          <label for="exampleInputNumber" class="form-label">Ingrese divisor</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber" aria-describedby="emailHelp">
         </div>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Sumar</button>
+          <button type="submit" class="btn btn-primary">Dividir</button>
         </div>
       </form>
     </div>
     <div class="position-relative w-75 p-4">
-      <h3 id="O3">
-        3. Número elevado al cuadrado.
-      </h3>
-      <form>
-        <div class="mb-5">
-          <label for="exampleInputEmail1" class="form-label">Ingrese un numero a elevar</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
-        </div>
-        <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">^2</button>
-        </div>
-      </form>
-    </div>
-    <div class="position-relative w-75 p-4">
-      <h3 id="O4">
-        4. Convertidor de euros a dólares
-      </h3>
-      <form>
-        <div class="mb-5">
-          <label for="exampleInputEmail1" class="form-label">Euros</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
-        </div>
-        <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Dolares</button>
-        </div>
-      </form>
-    </div>
-    <div class="position-relative w-75 p-4">
-      <h3 id="O5">
-        5. Area y perímetro de un cuadrado
-      </h3>
-      <form>
-        <div class="mb-5">
-          <label for="exampleInputEmail1" class="form-label">Ingrese lado del cuadrado</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
-        </div>
-        <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Area/Perimetro</button>
-        </div>
-      </form>
-    </div>
-    <div class="position-relative w-75 p-4">
-      <h3 id="O6">
-        6. Area y volúmen de un cilindro
+      <h3 id="C6">
+        6. Suma y multiplicacion enteros
       </h3>
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Ingrese el lado del cilindro</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 1</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber"
             aria-describedby="emailHelp">
         </div>
         <div class="mb-5">
-          <label for="exampleInputPassword1" class="form-label">Ingrese el radio de la circunferencia</label>
-          <input type="password" class="form-control border border-black" id="exampleInputPassword1">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 2</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
         </div>
         <div class="position-absolute bottom-0 end-0 pt-3">
-          <button type="submit" class="btn btn-primary">Area/Volumen</button>
+          <button type="submit" class="btn btn-primary">Sumar/Dividir</button>
         </div>
       </form>
     </div>
     <div class="position-relative w-75 p-4">
-      <h3 id="O7">
-        7. Longitud y área del círculo inscrito.
+      <h3 id="C7">
+        7. Año bisiesto
       </h3>
       <form>
         <div class="mb-5">
-          <label for="exampleInputEmail1" class="form-label">Ingrese el radio de la circunferencia</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
+          <label for="exampleInputNumber" class="form-label">Ingrese el año</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber"
             aria-describedby="emailHelp">
         </div>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">longitud/Area</button>
-        </div>
-      </form>
-    </div>
-    <div class="position-relative w-75 p-4">
-      <h3 id="O8">
-        8. Promedio de tres números
-
-      </h3>
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Numero 1</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Numero 2</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
-        </div>
-        <div class="mb-5">
-          <label for="exampleInputEmail1" class="form-label">Numero 3</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
-        </div>
-        <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Promedio</button>
+          <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
       </form>
     </div>
