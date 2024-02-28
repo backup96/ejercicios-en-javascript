@@ -4,263 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios en JavaScript</title>
-    <link rel="stylesheet" src="css/Styles.css">
+    <link rel="stylesheet" href="css/Styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <img src="img/js.svg" width="50" height="50" />
-        <h1>Ejercicios en JavaScript</h1>
-    </header>
-    <nav class="navbar bg-primary" data-bs-theme="dark">
-        <div class="btn-group me-2" role="group" aria-label="Second group">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Operadores</option>
-                <option value="1"><a href="#1">Area triangulo</a></option>
-                <option value="2">Suma</option>
-                <option value="3">Cuadrados</option>
-                <option value="4">Euros a dolares</option>
-                <option value="5">Area y perimetro cuadrado</option>
-                <option value="6">Area y volumen cilindro</option>
-                <option value="7">Radio, longitud y area</option>
-                    <a value="8" href="#asd">Promedio</a>
-              </select>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Operadores
-                </button>
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button"><a href="#asd">Area triangulo</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="#asd">Suma</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="#asd">Cuadrados</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="#asd">Euros a dolares</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a value="8" href="#asd">Area y perimetro cuadrado</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a value="8" href="#asd">Area y volumen cilindro</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a value="8" href="#asd">Radio, longitud y area</a></button></li>  
-                    <li><button class="dropdown-item" type="button"><a value="8" href="#asd">Promedio</a></button></li>
-                </ul>
-              </div>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Condicionales</option>
-                <option value="1">Deteccion de positivos y negativos</option>
-                <option value="2">Mayor o menor (2 numeros)</option>
-                <option value="3">Mayor o menor (3 numeros positivos)</option>
-                <option value="4">Suma o resta (A B)</option>
-                <option value="5">Divicion</option>
-                <option value="6">Suma y multiplicacion enteros</option>
-                <option value="7">Año bisiesto</option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Ciclos</option>
-                <option value="1">Multiplos de 3 entre 1-100</option>
-                <option value="2">Numeros impares</option>
-                <option value="3">Numeros pares</option>
-                <option value="1">Cuadrados 1-30</option>
-                <option value="2">Suma de cuadrados</option>
-                <option value="3">Numeros comprendidos en un rango</option>
-                <option value="1">Suma</option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Arreglos</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-          </div>
-    </nav>
-    <main class="container-sm">
-            <h2>
+      <div class="d-flex flex-row mb-3">
+        <img class="me-5 ms-5 mt-3" src="img/js.svg" width="90" height="90" />
+        <h1 class="text-start w-75 mt-4 float-end">Ejercicios en JavaScript</h1>
+      </div>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+          <div class="btn-group me-5 ms-5 w-100 row" role="group" aria-label="Second group">
+            <div class="dropdown col">
+              <button class="form-select" type="button" data-bs-toggle="dropdown" aria-label="Default select example">
                 Operadores
-            </h2>
-            <div class="container-md mt-4">
-                <div class="position-relative">
-                    <h3 id="1">
-                        1. Calcular el área de un triángulo
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Altura</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Base</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0 ">
-                            <button type="submit" class="btn btn-primary">Calcular</button>
-                        </div>
-                    </form>
-                </div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#O1"><button class="dropdown-item" type="button">Area triangulo</button></a></li>
+                <li><a href="#O2"><button class="dropdown-item" type="button">Suma</button></a></li>
+                <li><a href="#O3"><button class="dropdown-item" type="button">Cuadrado de un numero</button></a></li>
+                <li><a href="#O4"><button class="dropdown-item" type="button">Euros a dolares</button></a></li>
+                <li><a href="#O5"><button class="dropdown-item" type="button">Area y perimetro cuadrado</button></a></li>
+                <li><a href="#O6"><button class="dropdown-item" type="button">Area y volumen cilindro</button></a></li>
+                <li><a href="#O7"><button class="dropdown-item" type="button">Radio, longitud y area</button></a></li>
+                <li><a href="#O8"><button class="dropdown-item" type="button">Promedio</button></a></li>
+              </ul>
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        2. Ingresar dos números por teclado y sumarlos
-                    </h3>
-                    <form>
-                        <div class="mt-3">
-                          <label for="exampleInputEmail1" class="form-label">Numero 1</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mt-3 mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Numero 2</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0 pt-3">
-                            <button type="submit" class="btn btn-primary">Sumar</button>
-                        </div>
-                      </form>
-                </div>
+            <div class="col">
+              <a href="Condicionales.html" class="btn btn-dark w-100" aria-label="Default select example">
+                Condicionales
+              </a>
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        3. Ingresar un número y visualizar el número elevado al cuadrado.
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Numero a elevar</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0">
-                            <button type="submit" class="btn btn-primary">^2</button>
-                        </div>
-                      </form>
-                </div>
+            <div class="col">
+              <a href="Ciclos.html" class="btn btn-dark w-100" aria-label="Default select example">
+                Ciclos
+              </a>
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        4. Escribir un algoritmo que convierta de euros a dólares
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Euros</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0">
-                            <button type="submit" class="btn btn-primary">Dolares</button>
-                        </div>
-                      </form>
-                </div>
+            <div class="col">
+              <a href="Arreglos.html" class="btn btn-dark w-100" aria-label="Default select example">
+                Arreglos
+              </a>
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        5. Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del área y del
-                        perímetro
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Lado del cuadrado</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0">
-                            <button type="submit" class="btn btn-primary">Area/Perimetro</button>
-                        </div>
-                      </form>
-                </div>
+          </div>
+        </nav>
+    </header>
+    <main class="container mb-5">
+        <h2 class="mt-5">
+          Operadores
+        </h2>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O1">
+            1. Area de un triangulo
+          </h3>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese altura</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        6. Escribir un algoritmo que determine el área y el volúmen de un cilindro
-                    </h3>
-                    <form>
-                        <div class="mt-3">
-                          <label for="exampleInputEmail1" class="form-label">Lado</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mt-3 mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Radio</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0 pt-3">
-                            <button type="submit" class="btn btn-primary">Area/Volumen</button>
-                        </div>
-                      </form>
-                </div>
+            <div class="mb-5">
+              <label for="exampleInputPassword1" class="form-label">Ingrese base</label>
+              <input type="password" class="form-control border border-black" id="exampleInputPassword1">
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        7. Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y
-                        el área (pi*r)^2 del círculo inscrito.
-                        
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Radio circunferencia</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0">
-                            <button type="submit" class="btn btn-primary">longitud/Area</button>
-                        </div>
-                      </form>
-                </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">Calcular</button>
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3>
-                        7. Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y
-                        el área (pi*r)^2 del círculo inscrito.
-                        
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Radio circunferencia</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0">
-                            <button type="submit" class="btn btn-primary">longitud/Area</button>
-                        </div>
-                      </form>
-                </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O2">
+            2. Una suma
+          </h3>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese numero 1</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <div class="container-md mt-5">
-                <div class="position-relative">
-                    <h3 id="asd">
-                        8. Calcular el promedio de tres (3) números ingresados por teclado
-                        
-                    </h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Numero 1</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Numero 2</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Numero 3</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          </div>
-                        <br>
-                        <br>
-                        <div class="position-absolute bottom-0 end-0">
-                            <button type="submit" class="btn btn-primary">Promedio</button>
-                        </div>
-                      </form>
-                </div>
+            <div class="mb-5">
+              <label for="exampleInputPassword1" class="form-label">Ingrese numero 2</label>
+              <input type="password" class="form-control border border-black" id="exampleInputPassword1">
             </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">Sumar</button>
+            </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O3">
+            3. Número elevado al cuadrado.
+          </h3>
+          <form>
+            <div class="mb-5">
+              <label for="exampleInputEmail1" class="form-label">Ingrese un numero a elevar</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">^2</button>
+            </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O4">
+            4. Convertidor de euros a dólares
+          </h3>
+          <form>
+            <div class="mb-5">
+              <label for="exampleInputEmail1" class="form-label">Euros</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">Dolares</button>
+            </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O5">
+            5. Area y perímetro de un cuadrado
+          </h3>
+          <form>
+            <div class="mb-5">
+              <label for="exampleInputEmail1" class="form-label">Ingrese lado del cuadrado</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">Area/Perimetro</button>
+            </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O6">
+            6. Area y volúmen de un cilindro
+          </h3>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese el lado del cilindro</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-5">
+              <label for="exampleInputPassword1" class="form-label">Ingrese el radio de la circunferencia</label>
+              <input type="password" class="form-control border border-black" id="exampleInputPassword1">
+            </div>
+            <div class="position-absolute bottom-0 end-0 pt-3">
+              <button type="submit" class="btn btn-primary">Area/Volumen</button>
+            </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O7">
+            7. Longitud y área del círculo inscrito.
+          </h3>
+          <form>
+            <div class="mb-5">
+              <label for="exampleInputEmail1" class="form-label">Ingrese el radio de la circunferencia</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">longitud/Area</button>
+            </div>
+          </form>
+        </div>
+        <div class="position-relative w-75 p-4">
+          <h3 id="O8">
+            8. Promedio de tres números
+        
+          </h3>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Numero 1</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Numero 2</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-5">
+              <label for="exampleInputEmail1" class="form-label">Numero 3</label>
+              <input type="email" class="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="position-absolute bottom-0 end-0">
+              <button type="submit" class="btn btn-primary">Promedio</button>
+            </div>
+          </form>
+        </div>
     </main>
     <footer>
         <div class="card text-center">
