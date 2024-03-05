@@ -60,7 +60,21 @@
       </h3>
       <form>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Imprimir</button>
+          <button type="button" id="printMul3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Imprimir
+          </button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Resultado</h1>
+                <button type="button" id="closePrintMul3" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="DeNum">
+              </div>
+            </div>
+          </div>
         </div>
       </form>
     </div>
@@ -70,7 +84,9 @@
       </h3>
       <form>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Imprimir</button>
+          <button type="button" id="printImp" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Imprimir
+          </button>
         </div>
       </form>
     </div>
@@ -80,7 +96,9 @@
       </h3>
       <form>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Imprimir</button>
+          <button type="button" id="printPar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Imprimir
+          </button>
         </div>
       </form>
     </div>
@@ -90,7 +108,9 @@
       </h3>
       <form>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Imprimir</button>
+          <button type="button" id="printSquare" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Imprimir
+          </button>
         </div>
       </form>
     </div>
@@ -100,7 +120,10 @@
       </h3>
       <form>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Imprimir</button>
+          <button type="button" id="printSumSquare" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Imprimir
+          </button>
         </div>
       </form>
     </div>
@@ -111,15 +134,18 @@
       <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Ingrese el numero mayor</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
+          <input type="number" class="form-control border border-black" id="r1"
             aria-describedby="emailHelp">
         </div>
         <div class="mb-5">
           <label for="exampleInputPassword1" class="form-label">Ingrese el numero menor</label>
-          <input type="password" class="form-control border border-black" id="exampleInputPassword1">
+          <input type="number" class="form-control border border-black" id="r2">
         </div>
-        <div class="position-absolute bottom-0 end-0 pt-3">
-          <button type="submit" class="btn btn-primary">Imprimir rango</button>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="button" id="printSumRange" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Imprimir
+          </button>
         </div>
       </form>
     </div>
@@ -130,11 +156,19 @@
       <form>
         <div class="mb-5">
           <label for="exampleInputEmail1" class="form-label">Ingrese un numero</label>
-          <input type="email" class="form-control border border-black" id="exampleInputEmail1"
+          <input type="number" class="form-control border border-black" id="sumO"
             aria-describedby="emailHelp">
         </div>
+        <div class="mb-5">
+          <button type="button" id="printSumO" class="btn btn-primary" data-bs-target="#exampleModal">
+            Sumar
+          </button>
+        </div>
         <div class="position-absolute bottom-0 end-0">
-          <button type="submit" class="btn btn-primary">Sumar</button>
+          <button type="button" id="printSumA" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Imprimir
+          </button>
         </div>
       </form>
     </div>
@@ -154,6 +188,7 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/Cycles.js"></script>
 </body>
 
 </html>
