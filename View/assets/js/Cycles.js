@@ -109,3 +109,48 @@ function calcSumRange(){
 
 printSumRange.addEventListener('click', calcSumRange);
 
+const printSumO = document.getElementById('printSumO')
+const printSumA = document.getElementById('printSumA')
+
+var arr = []
+
+printSumO.addEventListener('click', function() {
+        var num1 = document.getElementById('sumO').value;
+        arr.push(num1)
+        if(num1 == 0){
+            const element = document.getElementById("printSumO");
+            const element2 = document.getElementById("printSumA");
+            element.setAttribute("disabled", "")
+            element2.removeAttribute("disabled")
+        }
+    }
+)
+
+function calcSumA(){    
+    var n = 0
+    var sum = 0
+    do{
+        if(arr[0] == 0){
+            console.log(arr[0])
+            arr[0] = 1
+            break
+        }
+        sum = sum + parseInt(arr[n])
+        n ++
+        console.log(sum)
+    }while(parseInt(arr[n]) != 0)
+    const element2 = document.getElementById("printSumO");
+    const element3 = document.getElementById("printSumA");
+    element2.removeAttribute("disabled")
+    element3.setAttribute("disabled", "")
+    const element = document.createElement("h2");
+    var content = document.createTextNode(`El resultado es: ${sum}`);
+    element.appendChild(content);
+    element.classList.add('fs-1');
+    document.getElementById('DeNum').appendChild(element);
+    arr.splice(0, arr.length)
+}
+
+printSumA.addEventListener('click', calcSumA)
+
+
